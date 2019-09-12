@@ -1,0 +1,217 @@
+<!– PARA EJEMPLO DASC — >
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--código que incluye Bootstrap-->
+        <!-- Se incluyen Bootstrap y nuestra propia Hoja de Estilos -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--termina código que incluye Bootstrap-->
+
+        <!-- PARA DATATABLE -->
+        <link href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <!--código que incluye el menú responsivo-->
+        <div class="b8s-example">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">INICIO</a>
+                </div>
+                <!-- Collection of nav links, forms, and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="active"><a href="#">Cotizaciones</a></li>
+                        <!-- ELEMENTOS INDIVIDUALES DEL MENÚ
+                        <li><a href="#">Cotizaciones</a></li>
+                        -->
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Proveedores<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Agregar un Proveedor</a></li>
+                                <li><a href="#">Agregar una sucursal</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Gestionar Proveedores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Refacciones<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Agregar una refacci&oacute;n</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Consulta rápida</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--termina código que incluye el menú responsivo-->
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Registrar un Proveedor</h1>
+                <form role="form" id="login-form" 
+                      method="post" class="form-signin" 
+                      action="proveedor_guardar.php">
+                    <div class="h2">
+                        DATOS DEL PROVEEDOR
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre_del_proveedor">Nombre del Proveedor (requerido)</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa nombre del proveedor" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Apellido Paterno</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingrese Apellido Paterno" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Apellido Materno</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa Apellido Materno" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">RFC</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa su RFC" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Direccion</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa Direccion" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Colonia</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa su Colonia" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">C.P.</label>
+                        <input type="number" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa su codigo postal" style="text-transform:uppercase;" required>
+                               <br>
+                                    <br>
+
+                               <label for="nombre_del_proveedor">País</label>
+                               <select class="mdb-select md-form">
+                                  <option value="" disabled selected>Elegir</option>
+                                  <option value="1">Mexico</option>
+                                  <option value="2">Francia</option>
+                                  <option value="3">Colombia</option>
+                                </select>
+
+                                    <br>
+                                    <br>
+                              
+
+                               <label for="nombre_del_proveedor">Estado</label>
+                                <select class="mdb-select md-form">
+                                  <option value="" disabled selected>Elegir</option>
+                                  <option value="1">Puebla</option>
+                                  <option value="2">Tlaxcala</option>
+                                  <option value="3">Veracruz</option>
+                                </select>
+                                    <br>
+                                    <br>
+
+                                  <label for="nombre_del_proveedor">Sexo</label>
+                                  <br>
+                                    <input type="radio" name="transporte" value="1">Masuclino 
+                                    <br>
+                                    <input type="radio" name="transporte" value="2" checked>Femenino
+                                    <br>
+                                    <br>
+                                    
+                                     <label for="nombre_del_proveedor">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa nombre del proveedor" style="text-transform:uppercase;" required>
+
+                                <label for="nombre_del_proveedor">Numero Telefonico</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa su numero Telefonico" style="text-transform:uppercase;" required>
+                               <br>
+                               <br>
+
+                       <label for="nombre_del_proveedor">Ocupacion</label>
+                       <br>
+
+                                  <select class="mdb-select md-form">
+                                  <option value="" disabled selected>Elegir</option>
+                                  <option value="1">Estudiante</option>
+                                  <option value="2">Desempleado</option>
+                                  <option value="3">Ingeniero</option>
+                                </select>
+                                    <br>
+                                    <br>
+
+                                    <label for="nombre_del_proveedor">Estado Civil</label>
+                                  <br>
+                                    <input type="radio" name="transporte" value="1">Casado 
+                                    <br>
+                                    <input type="radio" name="transporte" value="2" checked>Soltero
+                                    <br>
+                                    <input type="radio" name="transporte" value="2" checked>Viudo
+                                    <br>
+                                    <br>
+
+                                    <label for="nombre_del_proveedor">No.Cuenta:</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa numero de cuenta" style="text-transform:uppercase;" required>
+                               <br>
+
+                               <label for="nombre_del_proveedor">Tipo de pago</label>
+                               <br>
+                               <select class="mdb-select md-form">
+                                  <option value="" disabled selected>Elegir</option>
+                                  <option value="1">Efectivo</option>
+                                  <option value="2">Deposito</option>
+                                  <option value="3">Credito</option>
+                                </select>
+                                    <br>
+                                    <br>
+
+                                    <label for="nombre_del_proveedor">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa nombre de usuario" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Contraseña</label>
+                        <input type="password" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa su contraseñas" style="text-transform:uppercase;" required>
+
+                               <label for="nombre_del_proveedor">Correo-e</label>
+                        <input type="text" class="form-control" id="nombre_del_proveedor" name="nombre_del_proveedor"
+                               placeholder="Ingresa correo electronico" style="text-transform:uppercase;" required>
+                        
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <input type="reset" class="btn btn-default" value="Limpiar">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
