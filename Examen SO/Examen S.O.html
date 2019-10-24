@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Examen</title>
+
+</head>
+
+
+
+<script type="text/javascript">
+  var cali=0;
+function Calcular(){
+
+
+ respuesta1=document.getElementById("r1");
+ if (respuesta1.value=="es una suspensión temporal de la ejecución de un proceso") {
+    document.getElementById("mensaje1").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje1").innerHTML="Incorrecto";
+}
+respuesta2=document.getElementById("r2");
+ if (respuesta2.value==" es un sistema operativo con interfaz gráfica de usuario híbrido de entre 16 y 32 bits.") {
+    document.getElementById("mensaje2").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje2").innerHTML="Incorrecto";
+}
+respuesta3=document.getElementById("r3");
+ if (respuesta3.value==" permitir que varios procesos o aplicaciones se ejecuten aparentemente al mismo tiempo") {
+    document.getElementById("mensaje3").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje3").innerHTML="Incorrecto";
+}
+respuesta4=document.getElementById("r4");
+ if (respuesta4.value=="es un componente de hardware o software que almacena datos para que las solicitudes futuras") {
+    document.getElementById("mensaje4").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje4").innerHTML="Incorrecto";
+}
+respuesta5=document.getElementById("r5");
+ if (respuesta5.value=="son la alternativa arquitectónica que la tecnología actual") {
+    document.getElementById("mensaje5").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje5").innerHTML="Incorrecto";
+}
+respuesta6=document.getElementById("r6");
+ if (respuesta6.value=="kernel") {
+    document.getElementById("mensaje6").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje6").innerHTML="Incorrecto";
+}
+respuesta7=document.getElementById("r7");
+ if (respuesta7.value=="Windows 10") {
+    document.getElementById("mensaje7").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje7").innerHTML="Incorrecto";
+}
+respuesta8=document.getElementById("r8");
+ if (respuesta8.value=="programas") {
+    document.getElementById("mensaje8").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje8").innerHTML="Incorrecto";
+}
+respuesta9=document.getElementById("r9");
+ if (respuesta9.value=="que un mismo ordenador pueda tener varios microprocesadores ") {
+    document.getElementById("mensaje9").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje9").innerHTML="Incorrecto";
+}
+respuesta10=document.getElementById("r10");
+ if (respuesta10.value=="falso") {
+    document.getElementById("mensaje10").innerHTML="Correcto";
+    cali++
+ }
+else{
+    document.getElementById("mensaje10").innerHTML="Incorrecto";
+}
+document.getElementById("calificacionfinal").innerHTML= cali;
+}
+</script>
+<body>
+<FORM NAME="formulario" ACTION="">
+            
+            <h1>Examen</h1>
+            <h3>Sistemas Operativos</h3>
+            
+           <br>
+          
+            <label for="Pregunta1">1. ¿Que ocurre con el S.O ante una interrupcion?</label><br>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r1" name="r1"
+            placeholder="Ingresa Respuestas"  required>
+
+            <div id="mensaje1"></div>
+            <br>
+            <br>
+          
+            <label for="Pregunta2">2. ¿Es una caracteristica de windows 95?</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r2" name="r2"
+            placeholder="Ingresa Respuestas" required>
+             <div id="mensaje2"></div>
+            <br>
+            <br>
+        
+            <label for="Pregunta3">3. ¿Que es un sistema multitarea?</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r3" name="r3"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje3"></div>
+            <br>
+            <br>
+          
+            <label for="Pregunta4">4. ¿Cual es la funcion de la memoria cache?</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r4" name="r4"
+            placeholder="Ingresa Respuestas"required>
+            <div id="mensaje4"></div>
+            <br>
+            <br>
+          
+            <label for="Pregunta5">5. ¿Que es un sistema multiprocesador?</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r5" name="r5"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje5"></div>
+            <br>
+            <br>
+          
+            <label for="Pregunta6"> 6. ¿Cual de los siguientes no es un sistema operativo?</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="r6" name="r6"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje6"></div>
+            <br>
+            <br>
+         
+            <label for="Pregunta7"> 7. ¿La ultima version de Windows es:?</label>
+          <br>
+          <br>
+            <input type="text" class="form-control" id="r7" name="r7"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje7"></div>
+            <br>
+            <br>
+
+             <label for="Pregunta8"> 8. ¿Las aplicaciones en Windows reciben el nombre de:?</label>
+          <br>
+          <br>
+            <input type="text" class="form-control" id="r8" name="r8"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje8"></div>
+            <br>
+            <br>
+
+
+            <label for="Pregunta9"> 9.¿Un sistema multiprocesador ?</label>
+          <br>
+          <br>
+            <input type="text" class="form-control" id="r9" name="r9"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje9"></div>
+            <br>
+            <br>
+
+
+            <label for="Pregunta10"> 10.¿El núcleo del sistema operativo Linux es llamado MS-Dos?</label>
+          <br>
+          <br>
+            <input type="text" class="form-control" id="r10" name="r10"
+            placeholder="Ingresa Respuestas" required>
+            <div id="mensaje10"></div>
+            <br>
+            <br>
+
+
+
+<input type="reset" value="Borrar información">
+  <button onclick="Calcular()">Terminar</button>
+  <br>
+  <br>
+
+Calificacion: <div id="calificacionfinal"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+       </FORM> 
+  </div>
+      </div>
+    </td>
+  </tr>
+
+<p> </p>
+
+</body>
+</html
